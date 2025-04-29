@@ -49,4 +49,10 @@ function playGame() {
     for (let i = 0; i < 5; i++) {
         playRound(getHumanChoice(), getcomputerChoice());
     }
+
+    let humanScorePara = document.querySelector(".human-score");
+    let computerScorePara = document.querySelector(".computer-score");
+    
+    humanScorePara.appendChild(humanScore);
+    computerScorePara.appendChild(computerScore);
 }
